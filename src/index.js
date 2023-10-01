@@ -1,15 +1,12 @@
-// 1. Import dependencies
 import React from 'react';
-import { createRoot } from 'react-dom/client';
+import {createRoot} from 'react-dom';
 
-// 2. Create a React element
-    const element = React.createElement(
-    'p',
-    { id: 'hello' },
-    'Hello World!'
+const element = (
+    <p id='hello'>
+        Hello, <span>React</span>
+    </p>
 );
 
-// 3. Render the application
 const container = document.querySelector('#root');
 const root = createRoot(container);
 root.render(element);
